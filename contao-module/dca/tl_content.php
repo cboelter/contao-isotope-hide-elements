@@ -18,7 +18,7 @@ foreach ($GLOBALS['TL_DCA']['tl_content']['palettes'] as $type => $config) {
 /**
  * Operations
  */
-$GLOBALS['TL_DCA']['tl_content']['list']['operations']['hide_on_productdetail'] = [
+$GLOBALS['TL_DCA']['tl_content']['list']['operations']['hide_on_productdetail'] = array(
     'label'                => &$GLOBALS['TL_LANG']['tl_content']['hide_on_productdetail'],
     'attributes'           => 'onclick="Backend.getScrollOffset();"',
     'haste_ajax_operation' => array(
@@ -34,7 +34,7 @@ $GLOBALS['TL_DCA']['tl_content']['list']['operations']['hide_on_productdetail'] 
             ),
         ),
     ),
-];
+);
 
 /**
  * Add fields to tl_content
