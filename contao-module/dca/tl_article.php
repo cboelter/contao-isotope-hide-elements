@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Palettes
+ */
 $GLOBALS['TL_DCA']['tl_article']['subpalettes']['published'] =
     str_replace(
         'start,stop',
@@ -7,6 +10,9 @@ $GLOBALS['TL_DCA']['tl_article']['subpalettes']['published'] =
         $GLOBALS['TL_DCA']['tl_article']['subpalettes']['published']
     );
 
+/**
+ * Operations
+ */
 $GLOBALS['TL_DCA']['tl_article']['list']['operations']['hide_on_productdetail'] = array(
     'label'                => &$GLOBALS['TL_LANG']['tl_article']['hide_on_productdetail'],
     'attributes'           => 'onclick="Backend.getScrollOffset();"',
@@ -25,6 +31,9 @@ $GLOBALS['TL_DCA']['tl_article']['list']['operations']['hide_on_productdetail'] 
     ),
 );
 
+/**
+ * Fields
+ */
 $GLOBALS['TL_DCA']['tl_article']['fields']['published']['eval']['tl_class'] = 'w50';
 
 $GLOBALS['TL_DCA']['tl_article']['fields']['hide_on_productdetail'] = array(
